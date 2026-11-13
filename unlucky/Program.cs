@@ -49,7 +49,7 @@ static int AskForIntFromRange(string label, int fromInclusive, int toInclusive)
         }
         if (!(result >= fromInclusive && result <= toInclusive))
         {
-            Console.WriteLine("Invalid. Input must be 1-12.");
+            Console.WriteLine($"Invalid. Input must be {fromInclusive} - {toInclusive}.");
             WaitForInput();
             Console.Clear();
             continue;
